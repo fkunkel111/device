@@ -25,7 +25,7 @@ var DevicesGlobal Devices
 
 func init() {
 	//Load file and add device list to devices
-	jsonFile, err := os.Open("../../pkg/device/device.json")
+	jsonFile, err := os.Open("device.json")
 	if err != nil {
 		fmt.Println(err)
 	}
