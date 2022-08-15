@@ -22,19 +22,6 @@ func GetDeviceById(id string) (d Device) {
 	//Search devices for id
 }
 
-func getAllDevice(r *mux.Router) {
-	r.HandleFunc("/device", func(w http.ResponseWriter, r *http.Request) {
-		w.Header().Set("Content-Type", "application/json")
-
-		d := device.GetAllDevices()
-		payload, err := json.Marshal(d)
-
-		if err != nil {
-			w.WriteHeader(http.StatusBadRequest)
-		} else {
-			w.Write(payload)
-		}
-
-	})
+func GetAllDevices() (d []Device) {
+	return DevicesGlobal.Devices
 }
-
