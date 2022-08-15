@@ -1,0 +1,23 @@
+{"devices" : [
+    {
+        "id": "1",
+        "title": "ABC",
+        "organization" : "CR",
+        "created_at": "2022-08-13 00:00",
+        "serial_number": "1232",
+        "run_time": "187.22",
+        "creator" : "Skylar Kunkel"
+
+    },
+    {
+        "id": "2",
+        "title": "DEF",
+        "organization" : "CR",
+        "created_at": "2022-08-13 00:00",
+        "serial_number": "1234",
+        "run_time": "165.22",
+        "creator" : "Skylar Kunkel"
+
+    }
+
+]}
